@@ -1,5 +1,12 @@
-/* For main apperance across all pages*/
+/* For main apperance across all pages (desktop)*/
 body, p, h1, h2, h3, h4, h5, h6, table{
+    font-family:'Times New Roman', Times, serif;
+    line-height: 1.5;
+    color-scheme: light dark;
+    letter-spacing: normal;
+    font-style: normal;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
     background-color: #242424;
     color: white;
     text-align: center;
@@ -28,13 +35,19 @@ h2{
 }
 
 table, th, td, tr{
-    border: 1px solid;
+    border: 2px solid;
+    border-collapse: collapse;
+    border-color: black;
+    border-top-color: blue;
+    border-bottom-color: blue;
+    border-left-color: black;
+    border-right-color:black;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 div.container, main.container{
@@ -106,3 +119,41 @@ a:hover, a:active {
     background-color: limegreen;
 }
 
+/* For responsiveness */
+/* For mobile */
+@media only screen and (max-width: 600px) {
+    body, p, h1, h2, h3, h4, h5, h6, table {
+      background-color: lightblue;
+      color: black;
+      line-height: 1.2;
+    }
+    h1{
+        font-weight: 700;
+        font-size: 7vw;
+    }
+    h2{
+        font-weight: 700;
+        font-size: 4vw;
+    }
+}
+
+/* animation */
+#donkeykong{
+    animation: spin 7s linear infinite;
+}
+@keyframes spin{
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+#corgi img{
+    transition: transform 0.8s ease;
+}
+
+#corgi img:hover{
+    transform: rotate(360deg);
+}
