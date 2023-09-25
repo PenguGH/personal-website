@@ -1,0 +1,108 @@
+/* For main apperance across all pages*/
+body, p, h1, h2, h3, h4, h5, h6, table{
+    background-color: #242424;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 7vw;
+}
+
+h2{
+    font-size: 4vw;
+}
+
+
+/* period is for classes (can be used multiple times) */
+.video{
+    width: 560px;
+    height: 315px;
+}
+
+/* # is for ID (unique, should only be used once per ID) */
+#silksong{
+    border-style: dashed;
+    font-size: 18px;
+}
+
+table, th, td, tr{
+    border: 1px solid;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+div.container, main.container{
+    text-align: center;
+}
+
+ol.OrderedList, ul.UnorderedList{
+    display: inline-block;
+    text-align: left;
+}
+
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+ul li{
+    display: list-item;
+    background: black;
+    padding: 5px 10px;
+    color:white;
+    margin: 0 3px;
+}
+
+ul.footer li{
+    background: none;
+    float: left;
+    overflow: hidden;
+}
+
+
+/* For header/nav redirects */
+.styled-form {
+    text-align: center;
+    margin: 15px;
+}
+
+.styled-button {
+    background-color: #0084ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.styled-button:hover {
+    background-color: #004da0;
+}
+
+nav, header{
+    justify-content: center;
+}
+
+
+/* for footer redirects */
+a:link, a:visited{
+    background-color: #36f475;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+a:hover, a:active {
+    background-color: limegreen;
+}
+

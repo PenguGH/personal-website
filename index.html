@@ -3,18 +3,23 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="description" content="My personal website developed for a Web Science and Technology Class.">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Carter Phung">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Carter Phung's Personal Website</title>
+        <link rel ="stylesheet" type="text/css" href="css/styles.css" />
     </head>
    
 <body>
     <nav>
         <!-- button redirects to pages -->
-        <form action="index.html">
-            <input type="submit" value="Home">
+        <form action="index.html" class="styled-form">
+            <input type="submit" value="Home" class="styled-button">
         </form>
 
-        <form action="hobbies.html">
-            <input type="submit" value="Hobbies" />
+        <form action="hobbies.html" class="styled-form">
+            <input type="submit" value="Hobbies" class="styled-button"/>
         </form>
     </nav>
     
@@ -57,16 +62,16 @@
             </h3>
             <u>Programming Languages and Frameworks</u>
             <br>
-            Java, Python, C, HTML
+            Experience: Java, Python, C, HTML, CSS
     
             <br>
-            Currently Learning: CSS, JavaScript, React, Node.js
+            Currently Learning: JavaScript, React, Node.js
             <br>
     
             <br>
             <u>Software & Tools</u>
             <br>
-            Git, Github, Hadoop, AWS, GCP, Azure, Visual Studio Code, Excel
+            Git, Github, Hadoop, AWS, GCP, Azure, Netlify, Visual Studio Code, Excel
     
             <h4>
                 <u>Relevant Coursework</u>
@@ -111,16 +116,18 @@
     <img src = "pictures/hornet2.jpg" alt="">
 
     <br>
-    <a href="https://issilksongout.com/" target="_blank">
+    <a href="https://issilksongout.com/" target="_blank" id="silksong">
         Click here to check if Hollow Knight Silksong is out.
     </a>
         <hr>
     </div>
 
     <footer>
-        <a href="index.html">Go back home</a>
-        <br>
-        <a href="hobbies.html">Go to hobbies</a>
+        <ul class="footer">
+            <li><a href="index.html">Go back home</a></li>
+            <li><a href="hobbies.html">Go to hobbies</a></li>
+        </ul>
+
         <p>
             <strong>Author: Carter Phung</strong>
             <br>
